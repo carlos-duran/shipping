@@ -2,8 +2,9 @@ FROM oven/bun:1
 WORKDIR /project
 
 COPY package.json bun.lockb ./
+COPY apps/cloud apps/cloud
 COPY apps/company apps/company
-COPY packages/nexus packages/nexus
+RUN mkdir -p packages
 
 RUN bun install
 
