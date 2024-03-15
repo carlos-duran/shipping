@@ -3,6 +3,7 @@ WORKDIR /app
 
 COPY package.json bun.lockb ./
 COPY apps/cloud apps/cloud
+COPY packages/nexus packages/nexus
 
 RUN bun install
 
