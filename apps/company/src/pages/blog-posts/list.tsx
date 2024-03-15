@@ -10,7 +10,10 @@ import {
 import { type BaseRecord, useMany } from "@refinedev/core";
 import { Space, Table } from "antd";
 import { useEffect } from "react";
-import nexus from "nexus";
+import { edenTreaty } from "@elysiajs/eden";
+import type { App } from "cloud";
+
+const getNexus = (url: string) => edenTreaty<App>(url);
 
 export const BlogPostList = () => {
   const { tableProps } = useTable({
@@ -29,7 +32,7 @@ export const BlogPostList = () => {
   });
 
   useEffect(() => {
-    nexus(import.meta.env.VITE_API_URL)
+    getNexus(import.meta.env.VITE_API_URL)
       .hi.get()
       .then((res) => console.log(res.data));
   }, []);
