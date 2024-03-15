@@ -14,5 +14,4 @@ RUN bun run build
 
 RUN bun install -g serve
 EXPOSE 3000/tcp
-WORKDIR /project/apps/company
 ENTRYPOINT [ "serve", "dist" ]
