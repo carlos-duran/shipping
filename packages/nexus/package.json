@@ -1,0 +1,17 @@
+{
+  "name": "nexus",
+  "module": "index.ts",
+  "main": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "cloud": "workspace:*",
+    "elysia": "^0.8.17"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/eden": "^0.8.1"
+  }
+}

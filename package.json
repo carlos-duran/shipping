@@ -1,0 +1,7 @@
+{
+  "name": "shipping",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
