@@ -5,7 +5,7 @@ COPY package.json bun.lockb ./
 COPY apps/company apps/company
 COPY packages/nexus packages/nexus
 
-RUN bun install --frozen-lockfile --production
+RUN bun install
 
 WORKDIR /project/apps/company
 ENV NODE_ENV=production
