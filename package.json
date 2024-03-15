@@ -2,6 +2,7 @@
   "name": "shipping",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "cheese/*"
   ]
 }
